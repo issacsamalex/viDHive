@@ -8,13 +8,13 @@ This project is deployed on Vercel. You can access it <a href="https://www.googl
 
 ## Features ✨
 
-- Video and Channel Search: Users can search for specific videos or channels.
-- Dedicated Video and Channel Pages: Individual pages are designed for video playback and channel exploration.
+- **Video and Channel Search**: Users can search for specific videos or channels.
+- **Dedicated Video and Channel Pages**: Individual pages are designed for video playback and channel exploration.
 - Search Optimization:
-  - Debouncing: Reduces API calls by triggering the search after a delay.
-  - Caching: Minimizes repeated API calls for the same queries, improving performance.
-- Responsive Design: Built with Material-UI for modern styling and cross-device responsiveness.
-- API Integration: RapidAPI is used to fetch movie and video data.
+  - **Debouncing**: Reduces API calls by triggering the search after a delay.
+  - **Caching**: Minimizes repeated API calls for the same queries, improving performance.
+- **Responsive Design**: Built with Material-UI for modern styling and cross-device responsiveness.
+- **API Integration**: RapidAPI is used to fetch movie and video data.
 
 ## Tech Stack 👩‍💻
 
