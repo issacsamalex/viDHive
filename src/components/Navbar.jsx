@@ -1,7 +1,8 @@
 import { Box, Stack, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+
+import { logo } from "../utils/constants";
 import SearchBar from "./SearchBar";
-import { YouTube } from "@mui/icons-material";
 
 const Navbar = () => {
   return (
@@ -18,7 +19,7 @@ const Navbar = () => {
       }}
     >
       <Link to={"/"} style={{ display: "flex", alignItems: "center" }}>
-        <YouTube sx={{ color: "red" }} fontSize="large" />
+        <img src={logo} alt="logo" height={45} />
         <Typography
           color="#fff"
           variant="body2"

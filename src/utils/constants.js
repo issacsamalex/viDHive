@@ -13,6 +13,8 @@ import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
 import { PhoneAndroid } from "@mui/icons-material";
 
+export const logo = "https://i.ibb.co/s9Qys2j/logo.png";
+
 export const categories = [
   { name: "New", icon: <HomeIcon /> },
   { name: "Marques Brownlee", icon: <PhoneAndroid /> },
