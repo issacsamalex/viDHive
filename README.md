@@ -4,7 +4,7 @@ VidHive is a video streaming platform inspired by YouTube. Built using React.js,
 
 ## Demo 💻
 
-This project is deployed on Vercel. You can access it <a href="https://www.google.com" target="_blank">here</a>.
+This project is deployed on Vercel. You can access it <a href="https://vidhive.vercel.app/" target="_blank">here</a>.
 
 ## Features ✨
 
