@@ -15,29 +15,6 @@ import { GOOGLE_AC_URL } from "../utils/constants";
 import { useDispatch, useSelector } from "react-redux";
 import { cacheResults } from "../utils/searchSlice";
 
-// const options = ["HTML", "CSS", "Javascript", "TypeScript", "React"];
-
-const suggest = async () => {
-  return axios({
-    // A YT undocumented API for auto suggest search queries
-    url: GOOGLE_AC_URL,
-    adapter: jsonpAdapter,
-    params: {
-      client: "youtube",
-      hl: "en",
-      ds: "yt",
-      q: "iphone",
-    },
-  }).then((res) => {
-    console.log("jsonp results >> ", res.data[1]);
-    if (res.status !== 200) {
-      throw Error("Suggest API not 200!");
-    }
-  });
-};
-
-// suggest();
-
 const SearchBar = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -55,11 +32,6 @@ const SearchBar = () => {
       setValue(null);
     }
   };
-
-  console.log(value);
-  console.log(inputValue);
-  console.log(options);
-  console.log(JSON.stringify(searchCache));
 
   const getSearchSuggestion = async () => {
     if (inputValue) {
@@ -80,7 +52,6 @@ const SearchBar = () => {
             [inputValue]: res.data[1].map((item) => item[0]),
           })
         );
-        console.log("jsonp results >> ", res.data[1]);
         if (res.status !== 200) {
           throw Error("Suggest API not 200!");
         }
@@ -117,12 +88,6 @@ const SearchBar = () => {
         height: "42px",
       }}
     >
-      {/* <input
-        className="search-bar"
-        placeholder="search..."
-        value={searchTerm}
-        onChange={(event) => setSearchTerm(event.target.value)}
-      /> */}
       <Autocomplete
         className="search-bar"
         getOptionLabel={(option) => (typeof option === "string" ? option : "")}
